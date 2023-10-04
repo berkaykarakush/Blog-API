@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Blog-API.Domain\Blog-API.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstractions\" />
-  </ItemGroup>
-
 </Project>

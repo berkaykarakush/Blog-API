@@ -1,4 +1,5 @@
-﻿using Blog_API.Domain.Entities.Common;
+﻿using Blog_API.Domain.Entities;
+using Blog_API.Domain.Entities.Common;
 using Microsoft.EntityFrameworkCore;
 
 namespace Blog_API.Persistence.Contexts
@@ -12,10 +13,14 @@ namespace Blog_API.Persistence.Contexts
         /// Constructs a new instance configured with DbContextOptions
         /// </summary>
         /// <param name="options">DbContextOptions object</param>
-        public ApplicationDbContext(DbContextOptions options) : base(options)
-        {
-            
-        }
+        public ApplicationDbContext(DbContextOptions options) : base(options) { }
+
+        public DbSet<Article> Articles { get; set; }
+        public DbSet<ArticleImageFile> ArticleImageFiles { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Domain.Entities.File> Files { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+
         /// <summary>
         /// Used to configure the model using Fluent API
         /// </summary>
