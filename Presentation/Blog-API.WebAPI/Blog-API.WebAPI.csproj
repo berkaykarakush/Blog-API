@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Blog_API.WebAPI</RootNamespace>
+    <UserSecretsId>98aed4dc-ca93-411a-95ee-98432ca7b273</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
